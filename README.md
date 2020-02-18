@@ -2,6 +2,8 @@
 
 Produce a fractal from the Julia set on Urbit in Hoon.
 
+![](./dragon1024-0.png)
+
 The [Julia set]() is one of the most famous fractal generators.
 
 This implementation is written in Hoon.  Save `julia.hoon` in your `gen/` directory of your desk.
