@@ -16,4 +16,4 @@ Play with changing `cx` and `cy`, the complex coordinates, and `maxiter` (curren
 
 **For dimensions larger than 999, you will need to edit the PPM file directly to normalize the numeric output from Hoon's 1.000 preference.**
 
-PPM rendering routines borrowed and modified from Matt Newport's [raytracer](https://gist.github.com/mattnewport/f3eaa71c3f71cafe83da541cf3c052ae).
+PPM rendering routines borrowed and modified from Matt Newport (~hatdyl-toldeg)'s [raytracer](https://gist.github.com/mattnewport/f3eaa71c3f71cafe83da541cf3c052ae).
