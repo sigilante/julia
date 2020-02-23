@@ -66,7 +66,6 @@
   =/  value  (iterpt x y dim)
   =/  col  (snag value rainbow)
   $(x +(x), acc (weld "{<r.col>} {<g.col>} {<b.col>} " acc))
-  ::$(x +(x), acc (weld "{<value>} {<value>} {<value>} " acc))
 ++  iterpt
   |=  [px=@ py=@ dim=@ud]
   ^-  @ud ::[@ud @ud @ud]
@@ -75,10 +74,6 @@
   =/  zy  (sub:rs (mul:rs (div:rs (sun:rs py) (sun:rs dim)) range) (mul:rs .0.5 range))
   =/  maxiter  100
   =/  it  (iterlp zx zy maxiter)
-  ::::=/  c  [(div:rs (sun:rs it) (sun:rs maxiter)) (div:rs (sun:rs it) (sun:rs maxiter)) (div:rs (sun:rs it) (sun:rs maxiter))]
-  ::::~&  [c (rs-to-byte -:c) it]
-  ::::[(rs-to-byte -:c) (rs-to-byte +<:c) (rs-to-byte +>:c)]
-  ::[it it it]
   it
 ++  iterlp
   |=  [zx=@rs zy=@rs maxiter=@ud]
